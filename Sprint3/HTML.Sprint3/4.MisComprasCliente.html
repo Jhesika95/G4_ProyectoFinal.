@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis ComprasCliente</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css/estilo4.css">
+</head>
+<body>
+    <nav class="navbar">
+        <img class="logo" src="imagenes/logo.png" >
+        <div class="menuNav">
+            <ul>
+                <li><a href="#">Cerrar sesion</a></li>
+                <button type="button" class="btn btn-dark"><i class="fas fa-cart-arrow-down"></i></button>
+                <li><a href="#">Mis compras</a></li>
+                <button type="button" class="btn btn-dark ms-lg-5">  <i class="fas fa-user-alt"></i> </button>
+                <li><a href="#">Mi cuenta</a></li>
+            </ul> 
+
+        </div>       
+    </nav>
+    <form class="datosEnvio"></form>
+        <h2>Mis compras</h2>
+        <fieldset class="seccion">
+            <legend>Datos de Envio:</legend>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value="Pepe" readonly><br>
+            <label for="lname">Apellidos:</label><br>
+            <input type="text" id="lname" name="lname" value="Aguilar" readonly><br>
+            <label for="birthday">Telefono:</label><br>
+            <input type="text" id="phone" name="phone"><br>
+            <label for="email">Direccion de Envio:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="note">Indicaciones:</label><br>
+            <textarea name="note" id="note" cols="30" rows="2"></textarea>
+        </fieldset>
+    </form>
+    <fieldset class="seccion">
+        <legend>Informacion del Pedido</legend>
+        <table class="default">
+            <tr>
+              <th>Producto</th>
+              <th>&nbsp; Precio &nbsp;</th>
+              <th>Cantidad</th>
+              <th>Total</th>
+            </tr>
+            <tr>
+              <td>Fruta 1</td>
+              <td>$1.000</td>
+              <td>
+                  <select name="cantidad" id="cantidad3">
+                        <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                  </select>
+              </td>
+              <td>1.000</td>
+            </tr>
+            <tr>
+              <td>Fruta 2</td>
+              <td>$2.100</td>
+              <td>
+                <select name="cantidad" id="cantidad3">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+               </select>
+              </td>
+              <td>$2.100</td>
+            </tr>
+            <tr>
+              <td>Verdura</td>
+              <td>$2.000</td>
+              <td>
+                <select name="cantidad" id="cantidad3">
+                    <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+               </select>
+              </td>
+              <td>2.000</td>
+            </tr>
+          </table>
+          <button>Realizar pedido</button>
+    </fieldset>
+    <footer><p>Deseas que te ayudemos, escribenos: 3125000000  2021 FruverApp. Todos los derechos reservados</p></footer>
+</body>
+</html>
